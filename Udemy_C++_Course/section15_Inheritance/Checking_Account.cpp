@@ -7,7 +7,7 @@ Checking_Account::Checking_Account(std::string name, double balance)
 // Withdrawal:
 //      Included a fee of $1.50 per withdrawal transaction
 //
-bool Checking_Account::withdrawal(double amount) {
+bool Checking_Account::withdraw(double amount) {
     amount+=def_withdrawal_fee;
     return Account::withdraw(amount);
 }

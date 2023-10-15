@@ -10,13 +10,13 @@ Trust_Account::Trust_Account(std::string name, double balance, double int_rate)
 //
 bool Trust_Account::deposit(double amount) {
 
-    if(amount > bonus_threshold) 
+    if(amount >= bonus_threshold) 
         amount += bonus_amount;
 
     return Savings_Account::deposit(amount);
 }
 
-bool Trust_Account::withdrawal(double amount) {
+bool Trust_Account::withdraw(double amount) {
 
     if (amount > balance*max_withdraw_percent || num_of_withdrawals >= max_withdrawals) {
         return false;
@@ -29,7 +29,7 @@ bool Trust_Account::withdrawal(double amount) {
 
 
 std::ostream &operator<<(std::ostream &os, const Trust_Account &account) {
-    os << "[Trust_Account: " << account.name << ": " << account.balance << ", " << account.int_rate << "%, withdrawals" << account.num_of_withdrawals << "]";
+    os << "[Trust_Account: " << account.name << ": " << account.balance << ", " << account.int_rate << "%, Withdrawals: " << account.num_of_withdrawals << "]";
     return os;
 }
 

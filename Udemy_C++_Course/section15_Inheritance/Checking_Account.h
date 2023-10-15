@@ -1,5 +1,7 @@
 #ifndef _CHECKING_ACCOUNT_H_
 #define _CHECKING_ACCOUNT_H_
+#include <iostream>
+#include <string>
 #include "Account.h"
 
 // Checkings Account is a type of Account
@@ -18,7 +20,7 @@ private:
 public:
 
     Checking_Account(std::string name = def_name, double balance = def_balance);    
-    bool withdrawal(double amount);
+    bool withdraw(double amount);
     // Inherits the Account::deposit methods
 };
 

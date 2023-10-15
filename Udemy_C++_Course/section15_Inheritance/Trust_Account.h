@@ -1,6 +1,6 @@
 #ifndef _TRUST_ACCOUNT_H_
 #define _TRUST_ACCOUNT_H_
-#include "Account.h"
+
 #include "Savings_Account.h"
 
 // Trust Account is a type of Account
@@ -24,7 +24,7 @@ protected:
     int num_of_withdrawals;
 public:
     Trust_Account(std::string name = def_name, double balance =def_balance, double int_rate = def_int_rate);    
-    bool withdrawal(double amount);
+    bool withdraw(double amount);
     bool deposit(double amount);
 };
 

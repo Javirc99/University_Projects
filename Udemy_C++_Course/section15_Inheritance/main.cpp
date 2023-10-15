@@ -58,6 +58,7 @@ int main() {
 
     display(trust_accounts);
     deposit(trust_accounts, 1000);
+    deposit(trust_accounts, 6000);
     withdraw(trust_accounts, 3000);
 
     for(int i = 1; i <=5; i++){
