@@ -1,0 +1,10 @@
+^C:\USERS\JAVIE\DESKTOP\UNIVERSITY_PROJECTS\SOFTWARE_DEFINED_RADIO\SINEWAVEFLOWGRAPH\BUILD\CMAKEFILES\A23B2572A569E807D314C6ADDE3A6E96\GENERATE.STAMP.RULE
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/Users/javie/Desktop/University_Projects/Software_Defined_Radio/sineWaveFlowgraph -BC:/Users/javie/Desktop/University_Projects/Software_Defined_Radio/sineWaveFlowgraph/build --check-stamp-list CMakeFiles/generate.stamp.list --vs-solution-file C:/Users/javie/Desktop/University_Projects/Software_Defined_Radio/sineWaveFlowgraph/build/sineWaveFlowgraph.sln
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd

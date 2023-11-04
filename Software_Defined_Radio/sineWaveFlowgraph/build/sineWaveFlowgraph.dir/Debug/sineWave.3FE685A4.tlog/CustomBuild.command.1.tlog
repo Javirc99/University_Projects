@@ -1,0 +1,10 @@
+^C:\USERS\JAVIE\DESKTOP\UNIVERSITY_PROJECTS\SOFTWARE_DEFINED_RADIO\SINEWAVEFLOWGRAPH\CMAKELISTS.TXT
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/Users/javie/Desktop/University_Projects/Software_Defined_Radio/sineWaveFlowgraph -BC:/Users/javie/Desktop/University_Projects/Software_Defined_Radio/sineWaveFlowgraph/build --check-stamp-file C:/Users/javie/Desktop/University_Projects/Software_Defined_Radio/sineWaveFlowgraph/build/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
